@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+.recipies{
+  width: 150px;
+  height: 200px;
+  border-radius:8px ;
+  box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+   padding: 20px;
+   margin: 20px;
+   flex-direction: column;
+   align-items: center;
+}
+.recipies:hover{
+  width: 180px;
+  height: 230px;
+  transition: .4s;
+}
+.recipies img{
+  height: 80px;
+  width: 100px;
+  border-radius:10px ;
+  margin: 10px;
+}
+.recipies span{
+font-size: 10px;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.Ingridients{
+overflow-y: scroll;
+position: relative;
+top: 25px;
+visibility: hidden;
+opacity: 0;
+}
+.recipies:hover .Ingridients{
+  visibility:initial;
+  top: 0px;
+  transition: 1s;
+  opacity: 1;
+}
+.search input{
+  width:300px;
+  height :10px;
+  border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);
+}
+.search button{
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
